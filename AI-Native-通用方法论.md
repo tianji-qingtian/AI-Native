@@ -1,14 +1,14 @@
-# AI-Native 通用工作流方法论
+# AI-Native 工作流元框架
 
 ## 0. 谁该读这份文档
 
-- 用 Claude Code（或同类 AI agent CLI）作为主力工具的创作者/工程师/研究者
-- 想把"AI-native 工作流"落到实操而非停留在概念的实践者
-- 准备从零启动新项目，或者把 AI agent 引入已有项目/资产的团队
+- 想创建领域特定 AI-native 工作流 skill（如 AI-Native-Code、AI-Native-Write）的人
+- 想理解 4-Phase 骨架、质量契约网络、INTENT-GRAPH 等核心概念的实践者
+- 已有领域工作流变体，想对照通用骨架做改进的维护者
 
-适用领域：软件开发（AI-Native-Code）、小说写作（AI-Native-Write）、设计创作（AI-Native-Design）、学术研究（AI-Native-Research）、视频制作（AI-Native-Video）等任何可由 AI agent 执行子任务的创造性工作。
+**如果你只是想做项目**，不要直接读这份文档——用你领域的派生 skill（如 [`AI-Native-Code`](https://github.com/tianji-qingtian/AI-Native-Code)），它会按领域特定的方式引导你。
 
-如果你只是偶尔让 Claude 改点东西，不要读——这套方法论的成本只有在中等规模以上项目才回本。
+本仓库是**元框架**——类比 `skill-creator` 之于 skill 的关系。它定义了创建 AI-native 工作流 skill 的骨架和规范。
 
 ***
 
@@ -435,10 +435,10 @@ Phase 3  意图驱动          INTENT-GRAPH + Agent Team
 
 ***
 
-## 11. 配套 Starter
+## 11. 配套资源
 
-- `starters/generic-project/`：通用项目 starter 模板，可直接拷贝出 `git init` 启动任意领域的新项目
-- `skills/ai-native/`：Claude Code skill，安装后在任何项目中自动加载
+- `skills/ai-native/`：元框架 skill，引导派生新领域工作流 skill。skill 内的 `assets/starter-templates/` 提供全套项目模板，供派生 work 时定制
+- 参考实现：[`AI-Native-Code`](https://github.com/tianji-qingtian/AI-Native-Code) —— 软件开发特化版，推荐作为派生新领域工作流时的完整参照
 
 已有项目接入 playbook 持续完善中。
 
@@ -446,5 +446,5 @@ Phase 3  意图驱动          INTENT-GRAPH + Agent Team
 
 ## 12. 文档版本
 
-- v0.1（2026-05-06）：初版，从 AI-Native-Code 方法论提取并通用化
-- 每次跨领域试点出口（成立 / 失败）后更新
+- v0.2（2026-05-06）：重新定位为元框架，从 AI-Native-Code 提取并通用化
+- 每次新派生一个领域工作流后更新
