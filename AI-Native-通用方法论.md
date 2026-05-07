@@ -440,8 +440,6 @@ Phase 3  意图驱动          INTENT-GRAPH + Agent Team
 - `skills/ai-native/`：元框架 skill，引导派生新领域工作流 skill。skill 内的 `assets/starter-templates/` 提供全套项目模板，供派生 work 时定制
 - 参考实现：[`AI-Native-Code`](https://github.com/tianji-qingtian/AI-Native-Code) —— 软件开发特化版，推荐作为派生新领域工作流时的完整参照
 
-已有项目接入 playbook 持续完善中。
-
 ***
 
 ## 12. 文档版本
